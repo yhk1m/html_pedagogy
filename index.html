@@ -154,6 +154,13 @@
             font-size: 12px;
             font-weight: 500;
             margin-left: 15px;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        
+        .file-status:hover {
+            transform: scale(1.05);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.2);
         }
         
         .status-waiting {
@@ -253,7 +260,7 @@
         let filteredFiles = [];
         
         // Apps Script 웹앱 URL (실제 배포 URL로 교체 필요)
-        const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbwPFOl4enpTuovmRWd-NAI1gROkjeoMG1sgw4Qfke_XfMFDBvAT5e4w5SgYIWA5kOeA/exec';
+        const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbygBgIEWrLYQe2nFGf8ynVLmF0qFjcgSNsVwe0oMIikmnPS-Oa0TcdH0YEmMWSvz_6O/exec';
         
         // 파일 목록 로드
         async function loadFiles() {
@@ -354,4 +361,3 @@
     </script>
 </body>
 </html>
-
